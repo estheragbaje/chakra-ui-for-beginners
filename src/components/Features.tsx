@@ -6,7 +6,7 @@ import {
 } from '../icons/Icons';
 
 interface FeatureProps extends StackProps {
-  icon: ElementType;
+  icon: React.ElementType;
 }
 
 function Feature(props: FeatureProps) {
