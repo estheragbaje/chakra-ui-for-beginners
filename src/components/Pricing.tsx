@@ -5,6 +5,7 @@ import {
   Heading,
   HStack,
   Icon,
+  Stack,
   StackProps,
   Text,
 } from '@chakra-ui/react';
@@ -29,6 +30,7 @@ export function Pricing() {
       borderRadius='12px'
       overflow='hidden'
       boxShadow='0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04)'
+      textAlign='center'
     >
       <Flex>
         <Box bg='#F0EAFB' p='60px'>
@@ -50,6 +52,12 @@ export function Pricing() {
             Access these features when you get this pricing package for your
             business.
           </Text>
+          <Stack as='ul' spacing='20px' pt='24px'>
+            <ListItem>International calling and messaging API</ListItem>
+            <ListItem>Additional phone numbers</ListItem>
+            <ListItem>Automated messages via Zapier</ListItem>
+            <ListItem>24/7 support and consulting</ListItem>
+          </Stack>
         </Box>
       </Flex>
     </Box>
