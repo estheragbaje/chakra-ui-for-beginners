@@ -31,6 +31,7 @@ export function Pricing() {
       overflow='hidden'
       boxShadow='0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04)'
       textAlign='center'
+      as='section'
     >
       <Flex>
         <Box bg='#F0EAFB' p='60px'>

@@ -23,7 +23,7 @@ function Feature(props: FeatureProps) {
 
 export function Features() {
   return (
-    <Box maxW='1024px' m='auto' pt='60px' pb='32px'>
+    <Box maxW='1024px' m='auto' pt='60px' pb='32px' as='section'>
       <HStack px='48px' spacing='20px'>
         <Feature icon={MoneyBackGuaranteeIcon}>
           30 days money back Guarantee
