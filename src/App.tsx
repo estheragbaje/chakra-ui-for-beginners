@@ -1,9 +1,10 @@
-import { Box, Flex } from '@chakra-ui/react';
+import { Box, Stack } from '@chakra-ui/react';
 
+// To use HStack, VStack, remove the direction prop
 function App() {
   return (
     <div className='App'>
-      <Flex justify='space-between' align='center'>
+      <Stack spacing='24px' direction='row'>
         <Box bg='green' w='100px' h='200px'>
           item1
         </Box>
@@ -16,7 +17,7 @@ function App() {
         <Box bg='tomato' w='100px' h='200px'>
           item4
         </Box>
-      </Flex>
+      </Stack>
     </div>
   );
 }
