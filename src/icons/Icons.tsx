@@ -1,6 +1,7 @@
-export function CheckIcon() {
+export function CheckIcon(props: any) {
   return (
     <svg
+      {...props}
       width='22'
       height='22'
       viewBox='0 0 22 22'
@@ -17,7 +18,7 @@ export function CheckIcon() {
   );
 }
 
-export function MoneyBackGuaranteeIcon({ ...props }) {
+export function MoneyBackGuaranteeIcon(props: any) {
   return (
     <svg
       {...props}
@@ -42,7 +43,7 @@ export function MoneyBackGuaranteeIcon({ ...props }) {
   );
 }
 
-export function HassleFreeIcon({ ...props }) {
+export function HassleFreeIcon(props: any) {
   return (
     <svg
       {...props}
@@ -64,7 +65,7 @@ export function HassleFreeIcon({ ...props }) {
   );
 }
 
-export function MonthlySubscriptionIcon({ ...props }) {
+export function MonthlySubscriptionIcon(props: any) {
   return (
     <svg
       {...props}
