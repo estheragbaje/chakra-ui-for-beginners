@@ -15,7 +15,7 @@ export const ListItem = (props: StackProps) => {
   const { children, ...rest } = props;
   return (
     <HStack as='li' spacing='5' {...rest} align='flex-start'>
-      <Icon as={CheckIcon} w='22px' h='22px' />
+      <Icon as={CheckIcon} w='22px' h='22px' flexShrink={0} />
       <Text textAlign='left'>{children}</Text>
     </HStack>
   );
@@ -34,7 +34,7 @@ export function Pricing() {
         textAlign='center'
       >
         <Flex direction={['column', 'column', 'row']}>
-          <Box bg='#F0EAFB' p='60px'>
+          <Box bg='#F0EAFB' p={['28px', '6opx', '60px']}>
             <Text fontSize='xl' fontWeight='extrabold'>
               Premium PRO
             </Text>
@@ -44,7 +44,12 @@ export function Pricing() {
             <Text color='gray.900' fontSize='lg' fontWeight='medium' mt='2'>
               billed just once
             </Text>
-            <Button colorScheme='purple' size='lg' w='282px' mt='6'>
+            <Button
+              colorScheme='purple'
+              size='lg'
+              w={['auto', '282px', '282px']}
+              mt='6'
+            >
               Get Started
             </Button>
           </Box>
