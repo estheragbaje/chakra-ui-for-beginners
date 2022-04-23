@@ -13,7 +13,7 @@ function Feature(props: FeatureProps) {
   const { icon, children, ...rest } = props;
   return (
     <HStack {...rest} spacing='6' align='start'>
-      <Icon as={icon} boxSize={['8', '8', '12']} />
+      <Icon as={icon} boxSize={{ base: '8', lg: '12' }} />
       <Text textAlign='left' fontSize='lg' fontWeight='bold'>
         {children}
       </Text>
@@ -26,8 +26,8 @@ export function Features() {
     <Box maxW='1024px' m='auto' pt='60px' pb='8' as='section'>
       <Stack
         px='12'
-        direction={['column', 'column', 'row']}
-        spacing={['6', '6', '5']}
+        direction={{ base: 'column', lg: 'row' }}
+        spacing={{ base: '6', lg: '5' }}
       >
         <Feature icon={MoneyBackGuaranteeIcon}>
           30 days money back Guarantee
